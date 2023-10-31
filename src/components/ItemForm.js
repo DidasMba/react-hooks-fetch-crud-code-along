@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function ItemForm() {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("Produce");
+
+  useEffect(()=>{
+    
+  },[])
 
   return (
     <form className="NewItem">
@@ -34,4 +38,8 @@ function ItemForm() {
   );
 }
 
+///
+
 export default ItemForm;
+
+
